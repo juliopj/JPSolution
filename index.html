@@ -320,14 +320,14 @@
 
         });
     </script>
-   <script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.init({
-        chatflowid: "debeb88e-1d05-41e1-87f2-7b8a94caf819",
-        apiHost: "https://cloud.flowiseai.com",
-    })
-   </script> 
+ <!-- Chatbot Flowise en esquina inferior derecha -->
+ <div id="flowise-chatbot" 
+     style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; width: 400px; height: 600px; display: none; border-radius: 12px; overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.4);">
+    <iframe src="https://cloud.flowiseai.com/chatbot/debeb88e-1d05-41e1-87f2-7b8a94caf819" 
+            style="width: 100%; height: 100%; border: none;"></iframe>
+ </div>
 </body>
 
 
 </html>
+
